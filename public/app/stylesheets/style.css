@@ -1,0 +1,86 @@
+.container {
+    width: 95%;
+    border-radius: 0;
+!important;
+}
+
+.jumbotron {
+    border-radius: 0;
+!important;
+    background-color: #eff2f3
+}
+
+h1 {
+    color: #237f52 !important;
+}
+
+.btn-default {
+    border-radius: 0;
+    background-color: #08538c;
+    color: #fff;
+}
+
+.btn-n {
+    border-radius: 0;
+    background-color: #538c69;
+    color: #fff;
+}
+
+.btn-danger {
+    border-radius: 0;
+    background-color: #ea4335;
+    color: #fff;
+}
+
+.panel-title {
+    font-size: 30px;
+}
+
+.navbar-default {
+    background-color: #334858;
+    border-color: #334858;
+    min-height: 70px;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    padding-top: 23px;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #d9edf7;
+}
+
+.navbar-right {
+    margin-right: 0;
+    padding-top: 23px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    padding-top: 0;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav {
+    color: #fff;
+    padding-top: 14px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #d9edf7;
+}
+
+input[type=checkbox]:checked + label.strikethrough {
+    text-decoration: line-through;
+    color: #9e9b9f
+}
+
+.panel-body > ul > li:hover + span,
+.panel-body > ul > li > a > span {
+    visibility: hidden;
+}
+
+.panel-body > ul > li:hover span {
+    visibility: visible;
+}

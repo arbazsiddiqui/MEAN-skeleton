@@ -1,0 +1,42 @@
+<div ng-controller="TodoController">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/home">
+          Mean Skeleton
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>Hello {{user.name}} <br> <a ng-click="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="col-md-6 col-md-offset-3 centerfy">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h2 class="panel-title">Todos</h2>
+      </div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li ng-repeat="todo in todos | orderBy:'status'" class="list-group-item">
+            <input type="checkbox" ng-model="todo.status"
+                   ng-true-value="true"
+                   ng-false-value="false"
+                   ng-change="toggleTodo(todo._id, todo.status)"/>
+            <label class="strikethrough">
+              {{todo.text}} </label>
+            <a ng-click="deleteTodo(todo._id)"><span style="float: right" class="glyphicon glyphicon-remove"></span></a>
+          </li>
+        </ul>
+
+        <form ng-submit="addTodo()">
+          <div class="form-group">
+            <input placeholder="Add Task..." class="form-control" ng-model="todoText"/>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

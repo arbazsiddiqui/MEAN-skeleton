@@ -1,0 +1,21 @@
+<html ng-app="meanSkeleton">
+<head>
+  <base href='/'>
+  <title>Mean Skeleton</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app/stylesheets/style.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+  <!-- Services -->
+  <script type="text/javascript" src="app/services/todoService.js"></script>
+  <!-- Controllers -->
+  <script type="text/javascript" src="app/controllers/todoCtrl.js"></script>
+
+  <script type="text/javascript" src="app/app.js"></script>
+
+</head>
+
+<body>
+<div ng-include="'app/views/home.html'"></div>
+</body>
+</html>

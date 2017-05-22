@@ -20,9 +20,18 @@
     "mongoose": "^4.5.3",
     "morgan": "~1.7.0",
     "passport": "~0.3.2",
-    "passport-facebook" : "~2.0.0",
+    "passport-facebook": "~2.0.0",
     "passport-google-oauth": "~0.2.0",
     "passport-local": "~1.0.0",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-mocks": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "jasmine-core": "^2.6.2",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-jasmine": "^1.1.0"
   }
 }

@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Mon May 22 2017 22:23:42 GMT+0530 (IST)
+// Generated on Tue May 23 2017 00:38:41 GMT+0530 (IST)
 
 module.exports = function(config) {
   config.set({
@@ -15,6 +15,13 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      './node_modules/angular/angular.js',
+      './node_modules/angular-ui-router/release/angular-ui-router.js',
+      './node_modules/angular-mocks/angular-mocks.js',
+      './public/app/services/todoService.js',
+      './public/app/controllers/todoCtrl.js',
+      './public/app/app.js',
+      './public/app/services/todoService.spec.js'
     ],
 
 
@@ -65,4 +72,4 @@ module.exports = function(config) {
     // how many browser should be started simultaneous
     concurrency: Infinity
   })
-}
+};

@@ -1,6 +1,6 @@
 # Mean Skeleton
 
-A Todo App built using MEAN stack, containing social and local auth, CRUD and best practices to organise codebase.
+A Todo App built using MEAN stack for quick starting web apps, containing social and local auth, CRUD and best practices to organise codebase.
 
 
 Authentication is done using passport.js (session based authentication) and is handled by server, Angular getting bootstrapped after the authentication has been finished. 

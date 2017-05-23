@@ -1,16 +1,28 @@
 describe('todo factory', function() {
   var Todo;
-
-  // Before each test load our api.users module
+  
   beforeEach(angular.mock.module('meanSkeleton'));
-
-  // Before each test set our injected Users factory (_Users_) to our local Users variable
+  beforeEach(angular.mock.module('todoService'));
   beforeEach(inject(function(_Todo_) {
     Todo = _Todo_;
   }));
+  beforeEach(function(){
+    spyOn(console, 'error');
+  });
 
-  // A simple test to verify the Users factory exists
+  it('should print error to console', function(){
+    expect(console.error).toHaveBeenCalled();
+  });
+  
   it('should exist', function() {
     expect(Todo).toBeDefined();
   });
+
+  describe('.all', function () {
+    it('should login', function () {
+      expect(Todo.all).toEqual(["arbaz", "siddiqui"])
+    })
+  });
+
+  //
 });

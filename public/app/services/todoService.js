@@ -1,9 +1,13 @@
 angular.module('todoService', [])
   .factory('Todo', function ($http) {
     var todoFactory = {};
-
+    var temp = ["arbaz", "siddiqui"];
     todoFactory.getUser = function () {
       return $http.get('/me');
+    };
+
+    todoFactory.all = function () {
+      return temp;
     };
 
     todoFactory.getAll = function () {
